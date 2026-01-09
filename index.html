@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>La Corona de los Indeseables - Inicio</title>
+
+    <!-- Estilo CSS -->
+    <link rel="stylesheet" href="./styles/styles.css">
+    
+</head>
+
+<body>
+
+    <header>
+        <a href="#"><img src="./assets/header/lacorin_corona_y_texto.svg" alt="logo la corona de los indeseables" width="500px"
+            height="100px"></a>
+
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="menu-hamburger">☰</label>
+
+        <nav class="nav_menu">
+            <ul class="menu">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="./pages/libros.html">Libros</a></li>
+                <li><a href="./pages/nosotros.html">Conócenos</a></li>
+                <li><a href="./pages/bandasonora.html">Banda Sonora</a></li>
+                <li><a href="./pages/tienda.html">Tienda</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Barra flotante de redes. Se repite entre los archivos html -->
+        <div class="social-bar social-bar-right">
+            <a href="https://www.tiktok.com/@lacoronadelosindeseables" target="_blank" class="social-btn"
+                aria-label="TikTok">
+                <img src="./assets/icons/icon-tiktok.svg" alt="TikTok">
+            </a>
+            <a href="https://www.instagram.com/lacoronadelosindeseables" target="_blank" class="social-btn"
+                aria-label="Instagram">
+                <img src="./assets/icons/icon-instagram.svg" alt="Instagram">
+            </a>
+            <a href="https://x.com/cor_indeseables" target="_blank" class="social-btn" aria-label="X (Twitter)">
+                <img src="./assets/icons/icons-x.svg" alt="X (Twitter)">
+            </a>
+            <a href="https://www.youtube.com/@LaCoronadelosIndeseables" target="_blank" class="social-btn"
+                aria-label="YouTube">
+                <img src="./assets/icons/icon-youtube.svg" alt="YouTube">
+            </a>
+        </div>
+
+        <!--Slider-->
+        <article class="container">
+            <div class="slider-wrapper">
+                <!-- Hidden radios control which slide is “active” -->
+                <input type="radio" name="slider" id="slide-1" checked>
+                <input type="radio" name="slider" id="slide-2">
+
+                <div class="slider">
+                    <img data-target="slide-1" src="./assets/slider_inicio/Anuncio Spotify min.jpg"
+                        alt="imagen promocional sobre la banda sonora del libro linaje de reyes, ya disponible en todas las plataformas de música">
+                    <img data-target="slide-2" src="./assets/slider_inicio/LaCorIn min.jpg"
+                        alt="imagen con fondo dorado y el título la corona de los indeseables">
+                </div>
+
+                <div class="slider-nav">
+                    <label for="slide-1"></label>
+                    <label for="slide-2"></label>
+                </div>
+            </div>
+        </article>
+
+        <!-- Sección: Libro -->
+        <section>
+            <div class="horizontal_align">
+
+                <div class="frame_cuadrado">
+                    <h1 class="texto_izq">Linaje de Reyes</h1>
+                    <p>
+                        El eterno dorado del reino de Zetyron se oscurece con la colosal sombra de un dragón cargando la
+                        amenaza de la destrucción sobre sus alas, estremeciendo la autoridad de su Rey ante la presencia
+                        de una bestia que, hasta entonces, se creía extinta.
+
+                        Los inciertos del futuro se tensan y cobran vida cuando el monarca decide que su heredera es
+                        quien debe marchar en su cacería y traerle su cabeza como prueba de la fuerza en la sangre que
+                        domina el trono. Sin embargo, más allá de las fronteras se encuentra cara a cara con el viejo
+                        enemigo del reino, y el fantasma de una guerra abandonada hace siglos se impone en su camino.
+                    </p>
+                    <div with="50%">
+                        <a href="./pages/tienda.html" class="button1">Comprar</a>
+                    </div>
+                </div>
+
+                <img src="./assets/book/Mockup Libro PNG.png" alt="mockup del libro linaje de reyes"
+                    class="frame_cuadrado">
+
+            </div>
+
+
+            <!-- Trailer del último libro o Trailer de la Saga -->
+            <div class="contenido_centrado">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/6rHVzkuwxDQ?si=g7DFkx9vkjjMPnTd"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+        </section>
+
+        <!-- Sección: Banda Sonora -->
+        <section>
+            <div class="contenedor_spotify">
+                <div>
+                    <h2 class="texto_centrado">Banda Sonora</h2>
+                </div>
+                <iframe data-testid="embed-iframe" style="border-radius:12px"
+                    src="https://open.spotify.com/embed/album/3Q5yjnl2bJ5jPNArfhxAhS?utm_source=generator" width="100%"
+                    height="352" frameBorder="0" allowfullscreen=""
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                    loading="lazy"></iframe>
+
+                <!-- Botones a otras plataformas -->
+                <div class="horizontal_align">
+                    <a href="https://music.apple.com/co/album/linaje-de-reyes-banda-sonora-del-libro/1741525721"
+                        target="_blank" class="button1 texto_boton">Apple Music</a>
+
+                    <a href="https://music.amazon.es/albums/B0D1V1R43V" target="_blank"
+                        class="button1 texto_boton">Amazon
+                        Music</a>
+
+                    <a href="https://www.deezer.com/es/album/574832341" target="_blank"
+                        class="button1 texto_boton">Deezer</a>
+
+                    <a href="https://music.youtube.com/playlist?list=OLAK5uy_l030jbdJvq1QEwwam6i30llLrQEh2dZV8"
+                        target="_blank" class="button1 texto_boton">Youtube Music</a>
+                </div>
+                <p class="texto_centrado">Otras plataformas: iTunes, iHeart Radio, Claro Music, Anghami, Joox, MediaNet,
+                    Boomplay, Adaptr, Flo,
+                    Kuack Media, NetEase, Qobuz, Pandora, Saavn, Instagram, Facebook, Snapchat, Tencent, Tidal, Tiktok,
+                    Audiomack.</p>
+            </div>
+        </section>
+
+        <!-- Sección: Equipo -->
+        <section>
+            <h2 class="texto_centrado">Detrás de la Saga</h2>
+            <section class="horizontal_align">
+                <article class="frame_nosotros2">
+                    <div class="foto_nosotros">
+                        <img src="./assets/photos_nosotros/Paula_bn.png"
+                            alt="fotografía a blanco y negro de la coautora paula tinoco">
+                    </div>
+                    <h3>Paula Tinoco</h3>
+                    <p>Co-autora</p>
+                    <a href="./pages/nosotros.html" class="button1">Conócenos</a>
+                </article>
+                <article class="frame_nosotros2">
+                    <div class="foto_nosotros">
+                        <img src="./assets/photos_nosotros/Laura_bn.png"
+                            alt="fotografía a blanco y negro de la coautora laura duarte">
+                    </div>
+                    <h3>Laura Duarte</h3>
+                    <p>Co-autora</p>
+                    <a href="./pages/nosotros.html" class="button1">Conócenos</a>
+
+                </article>
+                <article class="frame_nosotros2">
+                    <div class="foto_nosotros">
+                        <img src="./assets/photos_nosotros/Dire_bn.png"
+                            alt="fotografía a blanco y negro del compositor musical direful">
+                    </div>
+                    <h3>Direful</h3>
+                    <p>Compositor Musical</p>
+                    <a href="./pages/nosotros.html" class="button1">Conócenos</a>
+                </article>
+                <article class="frame_nosotros2">
+                    <div class="foto_nosotros">
+                        <img src="./assets/photos_nosotros/Dona_bn.png"
+                            alt="fotografía a blanco y negro de la ilustradora tea-mc-donut">
+                    </div>
+                    <h3>TeaMCDonut</h3>
+                    <p>Ilustradora</p>
+                    <a href="./pages/nosotros.html" class="button1">Conócenos</a>
+                </article>
+            </section>
+        </section>
+
+        <!-- Sección: Frase -->
+        <section>
+            <h2 class="texto_centrado">"Ik Demerio Ist Des Dueris Nul Siur Nega"</h2>
+            <p class="texto_centrado">"El Regalo de los Dioses no se niega"</p>
+            <p class="texto_centrado">Libro 1 | Linaje de Reyes</p>
+        </section>
+
+        <!-- Conoce la Banda Sonora. Se repite en otros archivos html -->
+        <div class="section_background">
+            <h3 class="texto_centrado">Conoce la Banda Sonora</h3>
+            <p class="texto_centrado">Aprende más acerca de las canciones detrás de la historia</p>
+            <a href="./pages/bandasonora.html" class="button1">Explórala</a>
+        </div>
+    </main>
+
+    <!-- Contenido del pie de página del sitio. Se repite entre los archivos html -->
+    <footer class="footer">
+        <div class="footer-col">
+            <ul class="menu">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="./pages/nosotros.html">Conócenos</a></li>
+                <li><a href="./pages/tienda.html">Tienda</a></li>
+            </ul>
+        </div>
+        <div class="footer-col footer-center">
+            <img src="./assets/header/lacorin_corona.svg" alt="Logo La Corona de los Indeseables" width="12%">
+        </div>
+        <div class="footer-col footer-right">
+            <p class="p2">Copyright © 2025 La Corona de los Indeseables</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>|
