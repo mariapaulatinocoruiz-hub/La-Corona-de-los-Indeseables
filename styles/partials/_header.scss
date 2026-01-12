@@ -1,0 +1,105 @@
+@use "variables" as *;
+
+.custom-header {
+  position: sticky;
+  top: 0;
+  z-index: 500;
+  background-color: $color-bg;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  margin: 15px;
+  padding: 15px;
+  border-radius: 0px 0 10px 10px;
+}
+
+.custom-logo {
+  width: 400px;
+  height: auto;
+}
+
+.menu-link {
+  font-size: 12pt;
+  color: $color-text;
+  font-family: $font-garamond;
+  text-decoration: none;
+  position: relative;
+  cursor: pointer;
+  align-items: center;
+  text-align: center;
+}
+
+.menu-link::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  height: 1px;
+  width: 100%;
+  left: 0;
+  background-color: $color-primary;
+  transition: 0.3s;
+  transition-timing-function: ease-in-out;
+  transform: scaleX(0);
+}
+
+.menu-link:hover::after {
+  transform: scaleX(1);
+}
+
+.navbar-toggler {
+  border: none;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='m4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+@media screen and (max-width: $bp-sm) {
+  .custom-header {
+    margin: 0;
+    padding: 8px;
+  }
+
+  .custom-logo {
+    width: 300px;
+  }
+
+  .menu-link {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: $bp-md) {
+  .custom-logo {
+    width: 250px;
+  }
+
+  .menu-link {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: $bp-xs) {
+  .custom-header {
+    margin: 0;
+    padding: 8px;
+  }
+
+  .custom-logo {
+    width: 200px;
+  }
+
+  .menu-link {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: $bp-xxs) {
+  .custom-logo {
+    width: 150px;
+  }
+
+  .menu-link {
+    font-size: 2rem;
+  }
+}

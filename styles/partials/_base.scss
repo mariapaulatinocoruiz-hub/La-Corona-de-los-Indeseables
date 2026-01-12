@@ -1,0 +1,187 @@
+@use "variables" as *;
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: $color-bg !important;
+}
+
+section {
+  margin: 15px;
+  padding: 15px;
+}
+
+div {
+  padding: 15px 0px;
+}
+
+h1 {
+  color: $color-primary;
+  font-size: 30pt;
+  font-weight: bolder;
+  font-family: $font-cinzel;
+  text-align: center;
+  margin: 5px;
+  padding: 5px;
+}
+
+.titulo_principal {
+  color: $color-primary;
+  font-size: 30pt;
+  font-weight: bolder;
+  font-family: $font-cinzel;
+  text-align: center;
+  margin: 5px;
+  padding: 5px;
+}
+
+h2 {
+  color: $color-primary;
+  font-size: 25pt;
+  font-weight: bold;
+  font-family: $font-cinzel;
+  margin: 5px;
+  padding: 5px;
+}
+
+h3 {
+  color: $color-secondary;
+  font-size: 20pt;
+  font-family: $font-cinzel;
+  margin: 5px;
+  padding: 5px;
+}
+
+h4 {
+  color: $color-secondary;
+  font-style: italic;
+  font-family: $font-cinzel;
+  margin: 5px;
+  padding: 5px;
+}
+
+h5 {
+  color: $color-tertiary;
+  font-size: 12pt;
+  font-weight: bold;
+  font-family: $font-garamond;
+  text-align: center;
+}
+
+h6 {
+  color: $color-tertiary;
+  font-size: 12pt;
+  font-style: italic;
+  font-family: $font-garamond;
+  margin: 5px;
+  padding: 5px;
+}
+
+p {
+  color: $color-text;
+  font-size: 14pt;
+  font-family: $font-garamond;
+  text-align: justify;
+  margin: 5px;
+  padding: 15px 0px;
+}
+
+.p2 {
+  color: $color-primary;
+  font-size: 12pt;
+  font-family: $font-garamond;
+  margin: 5px;
+  padding: 5px;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+}
+
+li {
+  margin: 15px;
+  text-align: center;
+}
+
+.link {
+  color: $color-secondary;
+  text-decoration: none;
+}
+
+.menu a {
+  display: flex;
+  color: $color-text;
+  font-family: $font-garamond;
+  text-decoration: none;
+  width: max-content;
+  position: relative;
+  cursor: pointer;
+  align-items: center;
+  text-align: center;
+}
+
+.menu a::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  height: 1px;
+  width: 100%;
+  left: 0;
+  background-color: $color-primary;
+  transition: 0.3s;
+  transition-timing-function: ease-in-out;
+  transform: scaleX(0)
+}
+
+.menu a:hover::after {
+  transform: scaleX(1);
+}
+
+.texto_centrado {
+  text-align: center;
+}
+
+.texto_izq {
+  text-align: left;
+}
+
+.imgicon {
+  filter: invert(91%) sepia(100%) saturate(4896%) hue-rotate(321deg) brightness(94%) contrast(97%);
+  transform: transform 0.5s ease-in-out;
+}
+
+.imgicon:hover {
+  transform: scale(1.1);
+}
+
+.imgicon_special {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%) hue-rotate(72deg) brightness(99%) contrast(99%);
+}
+
+img {
+  max-width: 100%;
+  height: auto; 
+}
+
+.iframe_youtube {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9; 
+  max-width: 800px;
+  margin: 0 auto;
+  display: block;
+}
+

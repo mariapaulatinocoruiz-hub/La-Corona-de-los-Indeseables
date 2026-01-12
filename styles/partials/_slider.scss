@@ -1,0 +1,64 @@
+@use '../partials/variables' as *;
+
+.full-screen-slider {
+  aspect-ratio: 16 / 9;  // Proporción 16:9
+  width: 100%;
+  max-width: 100vw;  // Evita desbordamiento
+  overflow: hidden;  // Contiene la imagen
+}
+
+.full-screen-slider .carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  // Cubre sin distorsión ni desbordamiento
+}
+
+// Indicadores: círculos en la base, mejor posicionados
+.full-screen-slider .carousel-indicators {
+  position: absolute;
+  bottom: 20px;  // En la base
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  z-index: 10;  // Asegura que estén encima
+}
+
+.full-screen-slider .carousel-indicators li {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;  // Círculos
+  background-color: $color-primary;  // Color dorado
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.full-screen-slider .carousel-indicators .active {
+  background-color: $color-secondary;  // Color más claro para activo
+}
+
+// Flechas: planas blancas, sin fondo
+.full-screen-slider .carousel-control-prev,
+.full-screen-slider .carousel-control-next {
+  width: 5%;
+  opacity: 1;  // Totalmente visibles
+  background: none;  // Sin fondo
+  border: none;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.full-screen-slider .carousel-control-prev-icon,
+.full-screen-slider .carousel-control-next-icon {
+  width: 60px;
+  height: 60px;
+  color: white;  // Blancas
+  border-radius: 0;  // Planas
+  background-size: 50% 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
