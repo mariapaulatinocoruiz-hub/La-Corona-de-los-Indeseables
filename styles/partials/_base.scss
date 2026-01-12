@@ -150,6 +150,38 @@ li {
   transform: scaleX(1);
 }
 
+@media screen and (max-width: $bp-sm) {
+  .menu a {
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: $bp-md) {
+   .menu a {
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: $bp-xs) {
+    .menu a {
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: $bp-xxs) {
+   .menu a {
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .texto_centrado {
   text-align: center;
 }

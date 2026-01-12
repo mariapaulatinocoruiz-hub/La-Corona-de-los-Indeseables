@@ -1,3 +1,5 @@
+@use "variables" as *;
+
 .footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -29,4 +31,60 @@
   gap: 1rem;
   padding: 0;
   margin: 0;
+}
+
+@media screen and (max-width: $bp-sm) {
+  .footer .menu {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: $bp-md) {
+  .footer .menu {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: $bp-xs) {
+  .footer .menu {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: $bp-xxs) {
+  .footer .menu {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.footer_img {
+  width: 12%;
+}
+
+@media screen and (max-width: $bp-sm) {
+  .footer_img {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: $bp-md) {
+  .footer_img {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: $bp-xs) {
+  .footer_img {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: $bp-xxs) {
+  .footer_img {
+    width: 60%;
+  }
 }

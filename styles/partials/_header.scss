@@ -44,6 +44,30 @@
   transform: scaleX(1);
 }
 
+@media screen and (max-width: $bp-sm) {
+  .menu-link {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: $bp-md) {
+   .menu-link {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: $bp-xs) {
+    .menu-link {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: $bp-xxs) {
+   .menu-link {
+    font-size: 2rem;
+  }
+}
+
 .navbar-toggler {
   border: none;
   font-size: 1.5rem;
